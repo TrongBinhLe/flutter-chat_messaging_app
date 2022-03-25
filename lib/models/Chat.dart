@@ -14,14 +14,14 @@ class Chat {
 List chatsData = [
   Chat(
     name: "Jenny Wilson",
-    lastMessage: "Hope you are doing well...",
+    lastMessage: "Hope you are doing well",
     image: "assets/images/user.png",
     time: "3m ago",
     isActive: false,
   ),
   Chat(
     name: "Esther Howard",
-    lastMessage: "Hello Abdullah! I am...",
+    lastMessage: "Hell!jjdsfkjakg",
     image: "assets/images/user_2.png",
     time: "8m ago",
     isActive: true,
