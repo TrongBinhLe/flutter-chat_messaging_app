@@ -1,3 +1,4 @@
+import 'package:chat/constants.dart';
 import 'package:chat/screens/chats/components/body.dart';
 
 import 'package:flutter/material.dart';
@@ -8,6 +9,21 @@ class ChatsScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          Icons.person_add_alt_1,
+          color: Colors.white,
+        ),
+        backgroundColor: kPrimaryColor,
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.message), label: "Chats"),
+          BottomNavigationBarItem(icon: Icon(Icons.people), label: "Peoples"),
+          BottomNavigationBarItem(icon: Icon(Icons.call), label: "Calls"),
+        ],
+      ),
     );
   }
 

@@ -12,7 +12,10 @@ class WelcomeScreen extends StatelessWidget {
           Spacer(
             flex: 2,
           ),
-          Image.asset("assets/images/welcome_image.png"),
+          Image.asset(
+            "assets/images/welcome_image.png",
+            fit: BoxFit.contain,
+          ),
           Spacer(
             flex: 3,
           ),
