@@ -33,6 +33,11 @@ ThemeData darkThemeData(BuildContext context) {
       secondary: kSecondaryColor,
       error: kErrorColor,
     ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        backgroundColor: kContentColorLightTheme,
+        selectedItemColor: Colors.white70,
+        unselectedItemColor: kContentColorDarkTheme.withOpacity(0.32),
+        selectedIconTheme: IconThemeData(color: kPrimaryColor)),
   );
 }
 
