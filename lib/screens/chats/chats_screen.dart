@@ -22,6 +22,13 @@ class ChatsScreen extends StatelessWidget {
           BottomNavigationBarItem(icon: Icon(Icons.message), label: "Chats"),
           BottomNavigationBarItem(icon: Icon(Icons.people), label: "Peoples"),
           BottomNavigationBarItem(icon: Icon(Icons.call), label: "Calls"),
+          BottomNavigationBarItem(
+            icon: CircleAvatar(
+              radius: 14,
+              backgroundImage: AssetImage("assets/images/user_2.png"),
+            ),
+            label: "Profile",
+          )
         ],
       ),
     );
