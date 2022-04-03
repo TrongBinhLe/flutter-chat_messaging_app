@@ -1,4 +1,5 @@
 import 'package:chat/models/ChatMessage.dart';
+import 'package:chat/screens/messages/components/video_message.dart';
 
 import 'package:flutter/material.dart';
 
@@ -19,6 +20,11 @@ class Message extends StatelessWidget {
           break;
         case ChatMessageType.audio:
           return AudioMessage(
+            message: message,
+          );
+          break;
+        case ChatMessageType.video:
+          return VideoMessage(
             message: message,
           );
           break;
